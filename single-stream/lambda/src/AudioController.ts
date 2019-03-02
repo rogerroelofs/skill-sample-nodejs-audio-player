@@ -39,7 +39,7 @@ class AudioController {
 
         /*
            https://developer.amazon.com/docs/custom-skills/audioplayer-interface-reference.html#play
-           REPLACE_ALL: Immediately begin playback of the specified stream, and replace current and enqueued streams.             
+           REPLACE_ALL: Immediately begin playback of the specified stream, and replace current and enqueued streams.
         */
         const result = ResponseFactory.init();
 
@@ -66,14 +66,14 @@ class AudioController {
     playLater(url: string, cardData: ui.StandardCard): Response {
         /*
            https://developer.amazon.com/docs/custom-skills/audioplayer-interface-reference.html#play
-           REPLACE_ENQUEUED: Replace all streams in the queue. This does not impact the currently playing stream. 
+           REPLACE_ENQUEUED: Replace all streams in the queue. This does not impact the currently playing stream.
          */
         const result = ResponseFactory.init();
         result
             .addAudioPlayerPlayDirective('REPLACE_ENQUEUED', url, url, 0)
             .withShouldEndSession(true);
 
-        // add support for radio meta data.  
+        // add support for radio meta data.
         // this is not supported by the SDK yet, so it should be handled manually
         const response = this.addScreenBackground(cardData, result.getResponse());
         return response;

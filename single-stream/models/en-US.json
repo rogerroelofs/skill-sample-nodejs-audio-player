@@ -1,17 +1,17 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "my radio",
+      "invocationName": "sightseer radio",
       "intents": [
         {
           "name": "PlayAudio",
           "samples": [
             "play",
             "start",
-            "play my radio",
-            "play my radio please",
-            "start my radio",
-            "start my radio please",
+            "play sightseer radio",
+            "play sightseer radio please",
+            "start sightseer radio",
+            "start sightseer radio please",
             "start the radio",
             "start the radio please",
             "start the audio",
@@ -37,7 +37,7 @@
             "help please",
             "what should i do",
             "what's next",
-            "how can I listen to my radio",
+            "how can I listen to sightseer radio",
             "tell me how to play",
             "tell me how to stop",
             "tell me how to resume",

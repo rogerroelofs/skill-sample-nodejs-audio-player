@@ -3,62 +3,14 @@
 import { Request, IntentRequest, LaunchRequest } from 'ask-sdk-model';
 let en = {
     card: {
-        title: 'My Radio',
-        text: 'Less bla bla bla, more la la la',
+        title: 'SightSeer Radio',
+        text: 'Sightseer Radio, A reading service with news, books and dramas',
         image: {
-            largeImageUrl: 'https://alexademo.ninja/skills/logo-512.png',
-            smallImageUrl: 'https://alexademo.ninja/skills/logo-108.png'
+            largeImageUrl: 'https://thesightseer.org/wp-content/uploads/2011/10/sightseer_logo.jpg',
+            smallImageUrl: 'https://thesightseer.org/wp-content/uploads/2011/10/sightseer_logo.jpg'
         }
     },
-    url: 'https://audio1.maxi80.com',
-    startJingle: 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/jingle.m4a'
-};
-
-let fr = {
-    card: {
-        title: 'My Radio',
-        text: 'Moins de bla bla bla, plus de la la la',
-        image: {
-            image: {
-                largeImageUrl: 'https://alexademo.ninja/skills/logo-512.png',
-                smallImageUrl: 'https://alexademo.ninja/skills/logo-108.png'
-            }
-    
-        }
-    },
-    url: 'https://audio1.maxi80.com',
-    startJingle: 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/jingle.m4a'
-};
-
-let it = {
-    card: {
-        title: 'La Mia Radio',
-        text: 'Meno parlare, più musica',
-        image: {
-            image: {
-                largeImageUrl: 'https://alexademo.ninja/skills/logo-512.png',
-                smallImageUrl: 'https://alexademo.ninja/skills/logo-108.png'
-            }
-    
-        }
-    },
-    url: 'https://audio1.maxi80.com',
-    startJingle: 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/jingle.m4a'
-};
-
-let es = {
-    card: {
-        title: 'Mi Radio',
-        text: 'Menos conversación, más música',
-        image: {
-            image: {
-                largeImageUrl: 'https://alexademo.ninja/skills/logo-512.png',
-                smallImageUrl: 'https://alexademo.ninja/skills/logo-108.png'
-            }
-    
-        }
-    },
-    url: 'https://audio1.maxi80.com',
+    url: 'http://96.30.7.234:8220/;',
     startJingle: 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/jingle.m4a'
 };
 
@@ -67,12 +19,7 @@ let globalAudioData = {
         'en-GB': en,
         'en-CA': en,
         'en-IN': en,
-        'en-AU': en,
-        'fr-FR': fr,
-        'fr-CA': fr,
-        'it-IT': it,
-        'es-ES': es,
-        'es-MX': es
+        'en-AU': en
 };
 
 export function audioData(request : Request) {

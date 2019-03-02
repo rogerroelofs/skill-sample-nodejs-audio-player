@@ -1,7 +1,7 @@
 {
-  "name": "skill_sample_nodejs_sdkv2_single_stream",
-  "version": "2.0.0",
-  "description": "NodeJS SDKv2 Audio Sample Skill",
+  "name": "the_signtseer_radio_single_stream",
+  "version": "1.0.0",
+  "description": "SightSeer Radio Single Stream alexa skill",
   "main": "index.ts",
   "scripts": {
     "clean": "rm -rf dist/*",
